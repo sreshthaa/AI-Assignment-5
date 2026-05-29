@@ -1,0 +1,48 @@
+# AI Assignment
+
+Task 1: Minimax, Alpha Beta, Heuristic Alpha Beta, Monte Carlo Tree Search
+Task 2: AI Travel Planner
+Task 3: Knowledge Graph Discussion
+Task 4: Bayesian Networks
+
+
+A. Minimax Search
+Idea:
+Two players:
+MAX player → maximize score
+MIN player → minimize score
+
+
+             {    Utility(s), terminal
+ Minimax(s)= {    max(Minimax(children)), MAX
+             {    min(Minimax(children)), MIN
+
+
+B. Alpha Beta Search
+Improvement over minimax.
+Uses:
+alpha → best MAX can guarantee
+beta → best MIN can guarantee
+Pruning condition: beta <= alpha 
+
+C. Heuristic Alpha Beta
+Problem:
+Large games cannot search full tree.
+Solution:
+Use:
+Depth limit: 
+Evaluation function
+Example heuristic for Tic Tac Toe
+
+
+D. Monte Carlo Tree Search
+Four phases:
+1.Selection
+2.Expansion
+3.Simulation
+4.Backpropagation
+UCB = (wins/visits) + c(root over(ln(parentvisits)/visits))
+
+
+
+
